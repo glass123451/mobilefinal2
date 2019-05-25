@@ -16,7 +16,7 @@ class TodoFriendPage extends StatefulWidget{
 }
 
 Future<List<User>> fetchUsers(int userid) async {
-  final response = await http.get('https://jsonplaceholder.typicode.com/todos?userId=$userid');
+  final response = await http.get('https://jsonplaceholder.typicode.com/todos?userId={{id}}');
 
   List<User> userApi = [];
 
